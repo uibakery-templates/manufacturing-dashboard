@@ -13,10 +13,10 @@ slots:
   - id: '17194150364290.16855445806618063'
     name: content
     children:
-      - tasksStatusChart2.yml
       - tags.yml
       - tags2.yml
       - tags3.yml
       - heading15.yml
       - heading16.yml
       - heading17.yml
+      - productsChart3.yml

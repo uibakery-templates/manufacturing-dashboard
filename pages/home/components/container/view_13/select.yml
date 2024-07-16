@@ -42,15 +42,15 @@ properties:
       [
         {
           "value": "option_1",
-          "title": "Current"
+          "title": "Motorcycle"
         },
         {
           "value": "option_2",
-          "title": "Option 2"
+          "title": "Classic Car"
         },
         {
           "value": "option_3",
-          "title": "Option 3"
+          "title": "Truck"
         }
       ]
     withData: true
@@ -68,7 +68,7 @@ properties:
     text: Product Name
     position: horizontal
     align: left
-  placeholder: Current
+  placeholder: Product
 parentSlotId: '17194150364290.7203827428855616'
 index: -1
 actions: {}
