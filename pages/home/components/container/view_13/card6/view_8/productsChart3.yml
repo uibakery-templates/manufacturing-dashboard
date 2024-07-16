@@ -1,12 +1,13 @@
-id: '17194150364290.6128512207812868'
+id: '17211320218130.1752955184424141'
 definitionId: chart
+parentSlotId: '17194150364290.16855445806618063'
 styles:
   xl:
     gridItem:
       x: 0
-      y: 1
+      y: 0
       w: 24
-      h: 47
+      h: 52
     flex:
       size:
         widthValue: 300
@@ -18,9 +19,9 @@ styles:
   xs:
     gridItem:
       x: 0
-      y: 80
+      y: 170
       w: 24
-      h: 45
+      h: 80
     flex:
       size:
         widthValue: 300
@@ -30,9 +31,9 @@ styles:
       grow: '0'
       shrink: '0'
 properties:
-  dataset: '{{state.allTasks}}'
+  dataset: '{{actions.loadProducts.data}}'
   config: |-
-    option = {
+    {
       tooltip: {
         trigger: 'item'
       },
@@ -56,50 +57,33 @@ properties:
           },
           color: ['#2c5cec', '#f32866', '#e8ad0e'],
           data: [
-            { value: {{state.employeeTasks.filter(task => task.status === 'In Progress').length}}, name: 'In Progress'},
-            { value:   {{state.employeeTasks.filter(task => task.status === 'Paused').length}}, name: 'Paused' },
-            { value: {{state.employeeTasks.filter(task => task.status === 'Backlog').length}}, name: 'Backlog'},
-             
-
+            { value: 10, name: 'In Progress'},
+            { value:   10, name: 'Paused' },
+            { value: 10, name: 'Backlog'},
           ]
         }
       ]
     };
-  name: tasksStatusChart2
+  name: productsChart3
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  title: Fetchtasks
-  type: doughnutChart
+  title: Products
+  type: barChart
   structure:
-    - title: Fetchtask
+    - title: Product
       data: []
       color: primary
-      xProp: due_date
-      yProp: value
+      xProp: productCode
+      yProp: quantityInStock
       ignoreTimezone: false
-      __UIBAKERY__SYSTEM_ID__: '17159254658640.8147358599994106'
-      groupType: day
+      __UIBAKERY__SYSTEM_ID__: '17211320218570.7006046708793832'
+      groupType: value
       groupFunctionType: count
   showLoading:
     withData: true
-    dataValue: '{{actions.fetchTasks.loading}}'
+    dataValue: '{{actions.loadProducts.loading}}'
     value: false
   useJsConfig: echarts
-  valueLabel: none
-  containerStyles:
-    withData: false
-    dataValue: |-
-      {
-        padding: 'default',
-        shadow: 'default',
-        border: 'default'
-      }
-    value:
-      padding: default
-      shadow: default
-      border: none
-parentSlotId: '17194150364290.16855445806618063'
-index: 0
 actions: {}
 slots: []
