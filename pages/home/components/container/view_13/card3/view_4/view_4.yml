@@ -1,0 +1,20 @@
+id: '17194150364290.9822688952433869'
+definitionId: view
+styles: {}
+properties:
+  name: view_4
+  viewName: view_1
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '17194150364290.16154055958200608'
+index: 0
+slots:
+  - id: '17194150364290.001725960259746806'
+    name: content
+    children:
+      - heading3.yml
+      - heading6.yml
+      - divider.yml
+      - text.yml
+      - text2.yml

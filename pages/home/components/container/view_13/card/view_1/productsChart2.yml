@@ -1,0 +1,117 @@
+id: '17194161840800.8156975398995312'
+definitionId: chart
+parentSlotId: '17194159599780.7948216715134722'
+styles:
+  xl:
+    gridItem:
+      x: 6
+      y: 26
+      w: 12
+      h: 26
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+    legend:
+      visible: false
+      orientation: horizontal
+      horizontal: center
+      vertical: top
+  xs:
+    gridItem:
+      x: 0
+      y: 121
+      w: 24
+      h: 26
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  dataset: '{{actions.loadProducts.data}}'
+  config: |-
+    return {
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'cross',
+          label: {
+          }
+        }
+      },
+      grid: {
+        top: '6%',
+        left: '3%',
+        right: '4%',
+        bottom: '6%',
+        containLabel: true
+      },
+      xAxis: [
+        {
+          type: 'category',
+          boundaryGap: false,
+          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        }
+      ],
+      yAxis: [
+        {
+          type: 'value'
+        }
+      ],
+      series: [
+        {
+          name: 'Union Ads',
+          color: '#DFB03E',
+          type: 'line',
+          stack: 'Total',
+          areaStyle: {},
+          emphasis: {
+            focus: 'series'
+          },
+          data: [220, 182, 191, 234, 290, 330, 310]
+        }
+      ]
+    };
+  name: productsChart2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: ''
+  type: barChart
+  structure:
+    - title: Product
+      data: []
+      color: primary
+      xProp: productCode
+      yProp: quantityInStock
+      ignoreTimezone: false
+      __UIBAKERY__SYSTEM_ID__: '17194160312700.5886536803441675'
+      groupType: value
+      groupFunctionType: count
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadProducts.loading}}'
+    value: false
+  useJsConfig: echarts
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: default
+      shadow: default
+      border: none
+actions: {}
+slots: []

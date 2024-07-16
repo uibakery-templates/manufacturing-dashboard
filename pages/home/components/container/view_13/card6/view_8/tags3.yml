@@ -1,0 +1,53 @@
+id: '17194153941530.8510803060262222'
+definitionId: tags
+parentSlotId: '17194150364290.16855445806618063'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 66
+      w: 11
+      h: 7
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 28
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 139
+      w: 24
+      h: 7
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 28
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  value:
+    value:
+      - value: active
+        color: success
+        __UIBAKERY__SYSTEM_ID__: '1'
+      - value: not_active
+        color: danger
+        __UIBAKERY__SYSTEM_ID__: '2'
+    dataValue: |-
+      [
+        {
+          value: 'Service',
+          color: 'warning'
+        }
+      ]
+    withData: true
+  name: tags3
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions: {}
+slots: []

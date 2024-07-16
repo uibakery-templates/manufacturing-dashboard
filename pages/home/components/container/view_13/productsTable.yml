@@ -1,0 +1,313 @@
+id: '17194150364290.29284429857671035'
+definitionId: smartTable
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 54
+      w: 18
+      h: 88
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 320
+        heightUnit: px
+      grow: 0
+      shrink: 0
+  xs:
+    gridItem:
+      x: 0
+      y: 169
+      w: 24
+      h: 103
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 320
+        heightUnit: px
+      grow: 0
+      shrink: 0
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        {
+          "prop": "id",
+          "type": "number",
+          "primaryKey": true
+        },
+        "name",
+        {
+          "prop": "avatar",
+          "type": "image"
+        },
+        {
+          "prop": "email",
+          "type": "link"
+        }
+      ]
+    withData: false
+  data: '{{actions.loadProducts.data}}'
+  name: productsTable
+  title: Top products
+  limit: |
+    6
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadProducts.loading}}'
+    value: false
+  selectedRowIndex: '0'
+  triggerRowSelectOnInit:
+    value: true
+    dataValue: 'false'
+    withData: false
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  selectRowOnEditButtonClick:
+    value: false
+    dataValue: 'false'
+    withData: false
+  rowHeight: dynamic
+  showFooter:
+    value: true
+    dataValue: 'true'
+    withData: false
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: default
+      shadow: default
+      border: default
+  heightMode: fixed
+parentSlotId: '17194150364290.7203827428855616'
+index: -1
+actions: {}
+slots:
+  - id: '17194150364290.2972436103715248'
+    name: columns
+    children:
+      - id: '17194151652590.12343626696619014'
+        definitionId: atomicString
+        parentSlotId: '17194150364290.2972436103715248'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString
+          prop: productCode
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        index: 0
+        slots: []
+      - id: '17194151652590.9587611807817444'
+        definitionId: atomicText
+        parentSlotId: '17194150364290.2972436103715248'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicText
+          prop: productName
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 200
+          widthMode: auto
+          filter: true
+        index: 2
+        slots: []
+      - id: '17194151652590.3048950829567505'
+        definitionId: atomicString
+        parentSlotId: '17194150364290.2972436103715248'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString4
+          prop: productScale
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        index: 3
+        slots: []
+      - id: '17194151652590.0203306252446378'
+        definitionId: atomicString
+        parentSlotId: '17194150364290.2972436103715248'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString5
+          prop: productVendor
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        index: 4
+        slots: []
+      - id: '17194151652590.2354420979903762'
+        definitionId: atomicText
+        parentSlotId: '17194150364290.2972436103715248'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicText2
+          prop: productDescription
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 200
+          widthMode: auto
+          filter: true
+        index: 5
+        slots: []
+      - id: '17194151652590.5140674984586182'
+        definitionId: atomicNumber
+        parentSlotId: '17194150364290.2972436103715248'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber
+          prop: quantityInStock
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          widthMode: auto
+          filter: true
+        index: 6
+        slots: []
+      - id: '17194151652590.5185085811547632'
+        definitionId: atomicCurrency
+        parentSlotId: '17194150364290.2972436103715248'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicCurrency
+          prop: buyPrice
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          widthMode: auto
+          filter: true
+        index: 7
+        slots: []
+      - id: '17194151652590.7974470607012529'
+        definitionId: atomicNumber
+        parentSlotId: '17194150364290.2972436103715248'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicNumber2
+          prop: MSRP
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          widthMode: auto
+          filter: true
+        index: 8
+        slots: []
+      - id: '17194151652590.931604268300708'
+        definitionId: atomicSelect
+        parentSlotId: '17194150364290.2972436103715248'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicSelect
+          prop: productLine
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          primaryKey: false
+          filter: true
+          widthMode: auto
+          width: 120
+          options:
+            value:
+              - value: Motorcycles
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17194151756170.8459354625303963'
+              - value: Classic Cars
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17194151756170.1438324002758662'
+              - value: Trucks and Buses
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17194151756170.49154728722987695'
+              - value: Vintage Cars
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '17194151756170.4782295565324677'
+              - value: Planes
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '17194151756170.5370563685151841'
+              - value: Ships
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '17194151756170.6705596860128027'
+              - value: Trains
+                color: success-dark
+                __UIBAKERY__SYSTEM_ID__: '17194151756170.5663040513974673'
+            dataValue: |-
+              [
+                {
+                  value: 'Motorcycles',
+                  color: 'primary'
+                },
+                {
+                  value: 'Classic Cars',
+                  color: 'success'
+                },
+                {
+                  value: 'Trucks and Buses',
+                  color: 'warning'
+                },
+                {
+                  value: 'Vintage Cars',
+                  color: 'danger'
+                },
+                {
+                  value: 'Planes',
+                  color: 'info'
+                },
+                {
+                  value: 'Ships',
+                  color: 'primary-dark'
+                },
+                {
+                  value: 'Trains',
+                  color: 'success-dark'
+                }
+              ]
+            withData: false
+        index: 1
+        slots: []
